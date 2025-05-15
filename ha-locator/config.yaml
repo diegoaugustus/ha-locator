@@ -1,8 +1,8 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
-name: Car Locator
+name: Home Assistant Locator
 version: "0.1.0"
 slug: ha_locator
-description: Add-on to locate your car
+description: Add-on to locate your devices
 #url: "https://github.com/home-assistant/addons-example/tree/main/example"
 arch:
   - armhf
