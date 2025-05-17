@@ -3,8 +3,7 @@ FROM $BUILD_FROM
 
 ENV LANG C.UTF-8
 
-WORKDIR /app
+COPY run.sh /
+RUN chmod a+x /run.sh
 
-COPY run.sh /app/run.sh
-
-ENTRYPOINT ["/app/run.sh"]
+CMD [ "/run.sh" ]
