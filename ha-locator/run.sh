@@ -1,5 +1,8 @@
 #!/usr/bin/env bashio
 
+echo "Iniciando ha-locator"
+sleep 1
+
 MQTT_BROKER=$(bashio::services mqtt "host")
 MQTT_USER=$(bashio::services mqtt "username")
 MQTT_PASSWORD=$(bashio::services mqtt "password")
