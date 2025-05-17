@@ -13,3 +13,7 @@ _Example add-on to use as a blueprint for new add-ons._
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+
+
+## Rediscovery Automático
+O add-on publica periodicamente a configuração de auto-descoberta para garantir que as entidades permaneçam válidas no Home Assistant após reinícios. O intervalo padrão é de 1 hora (3600 segundos), mas pode ser ajustado via `discovery_interval` no `config.json`.
