@@ -3,16 +3,16 @@
 echo "Iniciando ha-locator"
 sleep 1
 
-MQTT_BROKER="core-mosquitto"  # Nome do serviço MQTT interno
-MQTT_USER=$(bashio::config "mqtt_user")
-MQTT_PASSWORD=$(bashio::config "mqtt_password")
+MQTT_BROKER=$(bashio::services mqtt "host")
+MQTT_USER=$(bashio::services mqtt "username")
+MQTT_PASSWORD=$(bashio::services mqtt "password")
 TOPIC="meu/topico"
 
-echo "Conectando ao broker: $MQTT_BROKER"
+echo "Iniciando subscription no tópico: $TOPIC"
 
 mosquitto_sub -h "$MQTT_BROKER" -u "$MQTT_USER" -P "$MQTT_PASSWORD" -t "$TOPIC" | while read -r line; do
-  echo "Mensagem recebida:"
-  echo "$line" | jq empty  # Ignora mensagens não-JSON sem gerar erro
+  echo "Nova mensagem recebida:"
+  echo "$line" | jq .
 done
 
 # Mantém o script ativo
