@@ -1,0 +1,6 @@
+{
+    "device_id": "veiculo_01",
+    "discovery_prefix": "homeassistant",
+    "discovery_interval": 3600
+  }
+  
