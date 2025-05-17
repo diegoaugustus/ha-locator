@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: Home Assistant Locator
-version: "0.1.10"
+version: "0.2.0"
 slug: ha_locator
 description: Add-on to locate your devices
 url: "https://github.com/diegoaugustus/ha-locator"
