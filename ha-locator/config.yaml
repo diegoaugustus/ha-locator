@@ -3,18 +3,14 @@ name: Home Assistant Locator
 version: "0.1.0"
 slug: ha_locator
 description: Add-on to locate your devices
-#url: "https://github.com/home-assistant/addons-example/tree/main/example"
+url: "https://github.com/diegoaugustus/ha-locator"
 arch:
   - armhf
   - armv7
   - aarch64
   - amd64
   - i386
-init: false
-map:
-  - share:rw
-#options:
-#  message: "Hello world..."
-#schema:
-#  message: "str?"
-#image: "ghcr.io/home-assistant/{arch}-addon-example"
+startup: "application"
+boot: "auto"
+options: {}
+schema: {}
