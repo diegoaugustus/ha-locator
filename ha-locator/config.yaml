@@ -12,9 +12,3 @@ arch:
   - armv7
   - i386
 startup: services
-options:
-  mqtt_user: !secret mqtt_username
-  mqtt_password: !secret mqtt_password
-schema:
-  mqtt_user: str
-  mqtt_password: str
